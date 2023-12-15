@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(port.webp);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav i{
+    color: red;
+    transition: 0.3s;
+}
+
+.nav i:hover{
+    color: white;
+}
+
+.nav:hover{
+    box-shadow: 0px 0px 8px;
+}
+
+.nav span{
+    color:red;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.nav span:hover{
+    color: white;
+}
+
+.nav ul{
+    text-decoration: none;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav ul li a{
+    color: red;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover{
+    color: white;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.main .h1-text{
+    color: red;
+    transition: all 0.3s;
+    margin-left: 30px;
+}
+
+.main .h1-text:hover{
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.main .p-text{
+    margin-top: 30px;
+    line-height: 1.5rem;
+    transition: all 0.3s;
+    margin-left: 30px;
+}
+
+
+.minicards2{
+    background-color: black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    transition: all 0.6s;
+}
+
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;  
+}
+
+.card-body{
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+.card:hover{
+    border: 1px solid red;
+    transition: all 0.5s;
+}
+
+.card-anime{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-titulo{
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.card-texto{
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* CASO QUISESSE MUDAR AS CORES ERA SÓ CHAMAR AS TAGS CARD E CARD-ANIME JUNTO DE BACKGROUND-COLOR */
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+    cursor: pointer;
+}
+
+.card-body:hover{
+    filter: blur(3px);
+}
+
+.main2{
+    background-image: url(port.webp);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main2 .h1-2-text{
+    color: red;
+    transition: all 0.3s;
+}
+
+.main2 .h1-2-text:hover{
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.main2 .main2-text p{
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width:785px){
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+
+    .nav ul{
+        display: none;
+    }
+
+    .nav span{
+        padding: 30px;
+    }
+
+    .main-text h1{
+        text-align: center;
+        padding: 30px;
+    }
+
+    .main-text .p-text{
+        display: none;
+    }
+
+    .img-text{
+        display: none;
+    }
+
+    .minicards2{
+        flex-direction: column;
+        display:grid;
+        overflow: hidden;
+        padding: 30px;
+    }
+
+    .main2{
+        display: block;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .main2-text .h1-2-text{
+        text-align: center;
+        margin-top: 20px;
+      
+    }
+
+    .main2-text .h4-2-text{
+        margin: auto;
+        width: 550px;
+        padding: 20px;
+    }
+
+    .main2 .img2-text{
+        display: none;
+    } 
+
+    .card:hover{
+        border: 1px solid red;
+        transition: all 0.5s;
+    }
+
+    .main .h1-text:hover{
+        color: white;
+        transition: all 0.3s;
+    }
+
+}
